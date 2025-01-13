@@ -37,7 +37,7 @@ app.get("/fruits", async (req, res) => {
 });
 
 
-// GET /fruits/new
+// GET /fruits/new NEW
 app.get("/fruits/new", (req, res) => {
   res.render("fruits/new.ejs");
 });
@@ -52,7 +52,7 @@ app.get('/fruits/:fruitId', async (req, res) => {
 
 
 // POST /fruits
-// POST /fruits
+// POST /fruits  CREATE
 app.post("/fruits", async (req, res) => {
   if (req.body.isReadyToEat === "on") {
     req.body.isReadyToEat = true;
